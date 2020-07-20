@@ -1,78 +1,135 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
-   
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- add bootstrap link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-    <!-- link from https://www.bootstrapcdn.com/fontawesome/ -->
-    <link rel="stylesheet" herf="ttps://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!--  link styles.css to the index.html page -->
+   
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- My CSS -->
     <link rel="stylesheet" href="styles.css">
 
     <title>Hosai's Page</title>
 
 </head>
-
-
 <body>
+     <div class="container">
+        <nav class="navbar">
+          <a href="#about"><button class="tablink" href="#about/">About Me</a></button>
+          <a href="#work"><button class="tablink" href="#work">Work</a></button>
+          <a href="#interests"><button class="tablink" href="interests">Interests</a></button>
+          <a href="#contactdetails"><button class="tablink" href="mailto:hosaiaziz@gmail.com">Contact Details</a></button>
+        </nav>
 
-    
-
- <!-- section for navigation menue and logo -->
- <section id="nav-bar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-        <!-- placed logo image after href="#" by removing Navbar-->
-        <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
-       
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-
-            <!-- after navbar-nav added ml-auto (this moves the menue names to the right) and nav-tabs ( this give it tabs) -->
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item ">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Work</a>
+        
+          <section id="welcome">
+            <div class="jumbotron text-center">
+              <h1>Hosai Aziz</h1>
+            </div>
+          </section>
+        
+     
+          
+              <section id="about">
+                <h3>About Me</h3>
+                <p class="lead">Welcome to my page! I am a student at Graduation and Academy Xi, studying Front End Web Development. I live in Sydney, Australia.
+               </p>
+             </section>
+          
+        
+              <section id="work">
+                <h3>Work</h3>
+                <p class="lead">I am currently working on my final project, with
+                  two other team members.</p>
+                  <h5>Project Details</h5>
+                  <p class="lead">
+                     <div>
+                      <ol>
+                        <li>Title</li>
+                          <ul><li>Task Planner</li></ul>
+                        <li>Description</li>
+                          <ul><li>The Task Planner project is divided into series of sprints.</li></ul>
+                        <li>
+                        <p><a href="https://hosaiaziz.github.io/PersonalPortfolio/" target="_blank"><img src="images/Taskplanner.png" alt="Task Planner"></a></p>
+                        </li>
+                      </ol>
+                    </div>
+                  </p>                
+              </section>
            
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Details</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+          
+          
+              <section id="interests">
+                <h3>Interests</h3>
+                  <p class="lead">
+                    <div>
+                      <ul>
+                        <li>Photography</li>
+                        <li>Learning new skills</li>
+                        <li>Spending time with family and friends.</li>
+                      </ul>
+                    </div>
+                  </p>
+              </section>
+           
+         
+              <section id="contactdetails">
+                <h3>Contact Details</h3>
+                  <p class="lead">I can contact via
+                    <ul>
+                      <li>
+                      <p><a href="mailto:hosaiaziz@gmail.com" target="_blank"><img src="images/Email.jpg" alt="Email"></a></p>
+                      </li>
+                      <li>
+                        <p><a href="https://hosaiaziz.github.io/PersonalPortfolio/" target="_blank"><img src="images/Github.png" alt="GitHub"></a></p>
+                      </li>
+                      <li>
+                        <p><a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a></p>
+                      </li>
+                      <li>
+                     
+                        <p>
+                        <a href="https://au.linkedin.com" target="_blank"><img src="images/Linkedin.png" alt="Linkedin"></a>
+                      </li>
+                    </ul>
+                    <br>To receive updates please Register below.</p>
+                  <form action="/action_page.php">
+                    <div class="form-group">
+                      <label for="email">Email address:</label>
+                      <input type="email" class="form-control" placeholder="Enter email" id="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Password:</label>
+                      <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                    </div>
+                    <div class="form-group form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Remember me
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+              </section>
+     </div>
+     
+          
+    
+          
 
-      <h1>Hosai Aziz</h1>
-      <h2>About Me</h2>
-      <p>I am a student at Graduation and Academy Xi. 
-      <br>
-       I live in Sydney, Australia.</p>
-  
-  
-      <h2>Interests</h2>
-      <ul>
-          <li>Photography</li>
-          <li>Learning new skills</li>
-          <li>Spending time with family and friends.</li>
-      </ul>
+          <!-- Footer -->
+          <footer>
+                <div class="container text-muted text-center py-3 mt-5">
+                    <h5>Copyright &copy; 2020 |
+                          <a class="text-warning text-decoration-none" href="mailto:hosaiaziz@gmail.com">Hosai Aziz</a>
+                    </h5>
+                </div>
+          </footer> 
+     </div>
 </body>
 </html>

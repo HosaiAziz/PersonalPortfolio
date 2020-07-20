@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+
+   <!--  link styles.css to the index.html page -->
+   <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+ 
+           <!-- after navbar-nav added ml-auto (this moves the menue names to the right) and nav-tabs ( this give it tabs) -->
+            <button class="tablink" onclick="openPage('Microphone' , this, ' red')">Microphone</button>
+            <button class="tablink" onclick="openPage('Speaker' , this, ' black')">Speaker</button>
+            <button class="tablink" onclick="openPage('Close' , this, 'green')">Close</button>
+            
+
+        <!-- create Tab Contents for Task Planner Welcome Page -->
+       
+	<div id="Microphone" class="tabcontent">
+            <h6>Image of Microphone</h6>              
+        </div>
+
+
+	<div id="Speaker" class="tabcontent">
+            <h6>Image of Speaker</h6>              
+        </div>
+
+
+	<div id="Microphone" class="tabcontent">
+            <h6>Image of Microphone</h6>              
+        </div>
+	
+	
+	<div id="Close" class="tabcontent">
+            <h6>Image of X </h6>              
+        </div>
+
+<button class="tablink" onclick="openPage('Enter' , this, ' black')">Enter</button>
+
+    </body>
+      </html>
+</html>

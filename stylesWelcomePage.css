@@ -1,0 +1,23 @@
+*{box-sizing: border-box;
+
+.tablink{
+    background-color: rgb(141, 182, 178);
+    color: rgb(122, 121, 206);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+.tablink:hover{
+        background-color: rgb(32, 18, 158);
+}
+.tabcontent{
+
+    color: rgb(122, 121, 206);;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
